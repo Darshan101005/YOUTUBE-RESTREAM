@@ -20,10 +20,7 @@ def get_youtube_path(id_type, identifier):
 def capitalize(string):
     return string.capitalize()
 
-@app.route('/')
-def index():
-    return "This is a Flask API backend. Please use the defined API endpoints.", 200
-    
+
 @app.route('/fetch.m3u8', methods=['GET'])
 def fetch_m3u8():
     try:
